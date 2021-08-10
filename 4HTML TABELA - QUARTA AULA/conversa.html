@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <title>Quero te conhecer</title>
+</head>
+
+<body>
+
+
+        <fieldset>
+            
+            <legend>Clique para enviar </legend>
+            <input type="submit" value="Submeter">
+
+        </fieldset>
+
+    <form >
+        <table border='1' cellpadding='10' width='600'>
+            <tr>
+                <td> <label>Qual a sua melhor lembrança?</label></td>
+                <td> <input type="text" placeholder='Resposta' />
+                </td>
+            </tr>
+            <tr>
+                <td> <label>Senha</label></td>
+                <td> <input type="password" placeholder='Senha' required maxlength="5" /> </td>
+
+            </tr>
+
+            <tr>
+                <td> <label>E-mail</label></td>
+                <td><input type="email" placeholder='email' required /> </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Para você o que é mais importante?</p>
+                </td>
+                <td>
+                    <input type="radio" id="chocolate" name="comida" value="chocolate" checked>
+                    <label for="chocolate">Chocolate</label>
+
+                    <input type="radio" id="coxinha" name="comida" value="coxinha">
+                    <label for="coxinha">Coxinha</label>
+                </td>                    
+            </tr>
+
+            <tr>
+                <td colspan='2' align="center">
+                    <input type="checkbox" id="amigo" name="amigo" value="amigo">
+                    <label for="amigo">Deseja ser meu amigo?</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='2' align="center">
+                    <label for="hoje">Que dia é hoje?</label>
+                    <input type="date" id="hoje" name="hoje" value="" min="2018-01-01" max="2018-12-31">
+                </td>
+            </tr>
+            <tr>
+                <td colspan='2' align="center">
+                    <input type="range" id="volume" name="volume" min="20" max="50">
+                    <label for="volume">Volume</label>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label>Você preferia ler todos os livros do mundo ou conhecer todas as cidades do
+                        mundo?</label>
+                </td>
+                <td>
+                    <select name='ler'>
+                        <option value='0' disabled>Selecione</option>
+                        <option value='1'>Ler todos os livros</option>
+                        <option value='2'>Conhecer todas as cidades</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Ser o autor de uma grande história ou o personsagem de uma grande história?</label>
+                </td>
+                <td>
+                    <select>
+                        <option>Autor</option>
+                        <option>Personsagem</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Qual sua melhor lembrança</label>
+                </td>
+                <td>
+                    <textarea id='texto' name='texto'>Bolo de cenoura</textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="avatar">Escolha uma foto sua:</label></td>
+                <td>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+</body>
+
+</html>
