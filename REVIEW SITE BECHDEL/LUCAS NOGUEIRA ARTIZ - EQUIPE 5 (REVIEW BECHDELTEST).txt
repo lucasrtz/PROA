@@ -1,0 +1,43 @@
+ LUCAS NOGUEIRA ARTIZ 
+ 
+site bechdeltest.com em uma função muito clara: mostrar quais filmes passam no teste de Bechdel 
+ou seja: 
+
+(1) têm 2 personagens femininos ou mais (com nome e relevância na trama)
+(2) que falam uma com a outra 
+(3) o assunto de que falam não é homem.
+
+
+
+1) A função desse site é bem executada?
+Depende do ponto de vista, se for falando sobre encontrar os filmes, sim. 
+Porém se o assunto for ter feito o site para que os usuários acessem e gostem do site, não.
+
+
+
+2) Você encontrou algum fime interessante que passe nesse teste? Informe.
+Sim, Enola Holmes
+
+
+
+3) Você encontrou algum fime interessante que não passe nesse teste? Informe.
+Sim, Love and Monsters
+Pra finalizar eles poderiam ter estilizado o site, as alterações que eu acrescentaria:
+ seja colocando os filmes com seus posters
+
+
+4) Visualmente o site é fraco. Isso é uma afirmação.
+Diga como o site pode ser melhorado, focando sempre na experiência do usuário.
+
+Para começar o site não tem nenhuma indentidade visual (Cores, fontes da marca, texturas, ícones, mascote e logo), acrescentando isso já seria um ótimo 
+começo. O que eu acrescentaria no site:
+~ Ao invés do Movie List ficar na vertical, eu teria colocado na horizontal e colocado o poster do filme junto ao seu nome embaixo.
+~ Teria adicionado uma aba em cima para filtrar por gêneros.
+~ Adicionado um sistema de login para quem quisesse adicionar um filme a lista.
+~ Um banner com noticias sobre filmes ou até mesmo publicidades.
+~ Centralizar a página
+
+
+
+
+Responda tudo em um arquivo TXT e publique no seu github (não precisa criar um reposítório só para isso).
