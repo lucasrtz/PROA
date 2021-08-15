@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --accent: #3DB45E;
+    --dark: #17191D;
+    --light: #f4f4f4;
+    --overlay: rgba:23, 25, 29, 0.8);
+    --ease: all, 0.3s, ease 0s;
+
+}
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+
+
+}
+
+aside,
+li,
+ul,
+p {
+    font-family: 'Open Sans';
+    color: var(--light)
+}
+
+h1,
+h2,
+h3 {
+    color: var(--accent);
+    font-family: 'Open Sans'
+}
+
+body {
+    background-color: var(--dark);
+   
+}
+
