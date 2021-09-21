@@ -1,0 +1,24 @@
+<html>
+    <meta charset="UTF-8">
+
+    <script>
+        radius = Number(prompt("Insira o raio do círculo:"));
+
+        function calcularCircunferencia() {
+            circumference = (2 * Math.PI * radius)
+            document.write("A circunferencia do circulo é: " + circumference.toFixed(2));
+        }
+
+        function calcularArea() {
+            area = Math.PI * Math.pow(radius, 2)
+            document.write("A area do circulo é: " + area.toFixed(2) + "<br>");
+        }
+
+        calcularCircunferencia()
+        calcularArea()
+ 
+    </script>
+
+
+
+</html>
