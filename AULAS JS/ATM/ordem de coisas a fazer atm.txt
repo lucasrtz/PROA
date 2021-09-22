@@ -1,0 +1,30 @@
+ORGANIZANDO PENSAMENTOS
+
+O QUE EU PRECISO FAZER:
+
+1-  SISTEMA DE BOAS VINDAS QUE FALEI "Olá {Nome} é um prazer ter você por aqui!".
+--------------------FEITO---------------------------------------------------------
+
+8- ADICIONAR UMA FUNCAO VERIFICADORA DE SENHA A senha é 3589. 
+--------------------FEITO---------------------------------------------------------
+
+9- FAZER MENSAGEM DE TCHAU {Nome}, foi um prazer ter você por aqui!".
+--------------------FEITO---------------------------------------------------------
+
+2-  SISTEMA QUE FAÇA O USUARIO SÓ PODER SACAR O NUMERO IGUAL E NAO MENOR QUE 0 IF 
+MAIOR QUE VARIAVEL = Exiba uma mensagem de "Operação não autorizada". 
+
+4- ADICIONAR OPÇÃO DE FAZER TRANSFERENCIA
+
+5- CHECAR SALDO NA HORA DE FAZER TRANSFERENCIA
+
+3- ADICIONAR OPÇÃO DE VER EXTRATO
+
+6- ORDEM DAS OPÇÕES Saldo, Extrato, Saque, Depósito, Transferência e Sair. 
+
+7- ATUALIZE A FUNÇÃO ERRO
+
+
+
+10-- Na função "inicio", utilize escolha/caso (switch/case) para validar a opção do usuário. 
+
