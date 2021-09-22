@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title> Fórmula de Javascript </title>
+
+    <script>
+        var num1 = prompt("Informe um número");
+        var num2 = prompt("Informe outro número");
+        var num3 = prompt("Informe outro número");
+
+
+        if (num1 > num2 && num1 > num3 && num2 > num3) {
+            document.write(num1 + num2);
+        } else if (num2 > num1 && num2 > num3 && num3 > num1)  {
+            document.write(num2 + num3);
+
+        } else if (num3 > num2 && num3 > num1 && num1 > num2) {
+            document.write(num3 + num1);
+
+        } else if (num1 == num2 && num1 == num3) {
+            document.write("Todos os números são iguais!")
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
