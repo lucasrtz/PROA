@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #6dd5ff;
+    background-color: gray;
 }
 
 #t1 {
@@ -28,7 +28,7 @@ h3, button {
 }
 
 button {
-    background-color: rgb(24, 229, 236);
+    background-color:gray;
     cursor: pointer;
     font-weight: bold;
     border-radius: 20px;
