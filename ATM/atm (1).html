@@ -14,25 +14,51 @@
 
 		function inicio() {
 
-			var escolha = parseInt(prompt('Selecione uma opção 1.) Saldo 2.) Depósito 3.) Saque 4.) Sair'));
+			var escolha = parseInt(prompt(`Selecione uma opção:
+1.) Saldo
+2.) Extrato
+3.) Saque
+4.) Depósito 
+5.) Transferência 
+6.) Sair`));
 
-
-
-			if (escolha === 1) {
-				checkpassword();
-				ver_saldo();
-			} else if (escolha === 2) {
-				checkpassword();
-				fazer_deposito();
-			} else if (escolha === 3) {
-				checkpassword();
-				fazer_saque();
-			} else if (escolha === 4) {
-				sair();
-			} else {
-				erro();
+			switch (escolha) {
+				case 1:
+					ver_saldo();
+					break;
 			}
+			switch (escolha) {
+				case 2:
+					ver_extrato();
+					break;
+			}
+			switch (escolha) {
+				case 3:
+					fazer_saque();
+					break;
+			}
+			switch (escolha) {
+				case 4:
+					fazer_deposito();
+					break;
+			}
+			switch (escolha) {
+				case 5:
+					transferência();
+					break;
+			}
+			switch (escolha) {
+				case 6:
+					sair();
+					break;
+				default:
+					erro();
+			}
+
+
 		}
+
+
 
 		function ver_saldo() {
 			alert('Seu saldo atual é: ' + saldo);
@@ -45,8 +71,9 @@
 			if (isNaN(deposito) || deposito === '') {
 				alert('Por favor, informe um número:');
 				fazer_deposito();
-			} else if (deposito < 0) {
-				alert('Operação não autorizada.');
+			} else if (deposito <= 0) {
+				alert('Operação não autorizada')
+				fazer_deposito();
 			} else {
 				saldo += deposito;
 				ver_saldo();
@@ -54,10 +81,27 @@
 		}
 
 		function fazer_saque() {
+			var senha = parseInt(prompt('Por favor, informe sua senha: '));
+			if (senha == 3589) {
+				check_saque();
+			} else {
+				alert('Senha incorreta, você será redirecionado para o início')
+				inicio();
+			}
+		}
+
+		function check_saque() {
 			var saque = parseFloat(prompt('Qual o valor para saque?'));
 			if (isNaN(saque) || saque === '') {
 				alert('Por favor, informe um número:');
-				fazer_saque();
+				check_saque();
+				4
+			} else if (saque <= 0) {
+				alert("Operação não autorizada");
+				inicio();
+			} else if (saque > saldo) {
+				alert("Operação não autorizada");
+				inicio();
 			} else {
 				saldo -= saque;
 
@@ -65,23 +109,46 @@
 			}
 		}
 
+
+		function transferência() {
+			var transf = parseInt(prompt('Insira o número da conta'));
+			if (Number.isInteger(Number(transf))) {
+				check_transferencia();
+			} else {
+				alert('Operação não autorizada');
+				inicio();
+			}
+		}
+
+		function check_transferencia() {
+			var vtransf = parseInt(prompt('Insira o valor que deseja transferir'));
+			if (vtransf <= 0) {
+				alert('Operação não autorizada');
+				inicio();
+			} else if (vtransf > saldo) {
+				alert("Operação não autorizada");
+				inicio();
+			} else if (Number.isInteger(Number(vtransf))) {
+				alert('Transferência realizada com sucesso');
+				saldo -= vtransf;
+				ver_saldo();
+			} else {
+				alert('Operação não autorizada');
+				inicio();
+			}
+		}
+
 		function erro() {
-			alert('Por favor, informe um número entre 1 e 4');
+			alert('Por favor, informe um número entre 1 a 6');
 			inicio();
 		}
 
 
-		function checkpassword() {
-			var password = parseInt(prompt("Informe sua senha!"));
-			if (password === 3589) {
-				alert('Senha correta, prossiga');
-			} else {
-				alert('Senha incorreta! Você será redirecionado ao início.')
-				inicio();
+		function ver_extrato() {
 
-			}
-
-
+			alert("5000 reais gastos na Boca de Fumo do Jorge")
+			alert("5 reais gastos na Padoca do seu zé")
+			inicio();
 		}
 
 		function sair() {
