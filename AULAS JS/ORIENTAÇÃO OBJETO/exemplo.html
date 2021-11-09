@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevador de cria</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        class Elevator {
+        constructor(currentFloor, howmanyfloors, elevatorCapacity, personsInElevator) {
+            this.currentFloor = currentFloor;
+            this.howmanyfloors = howmanyfloors;
+            this.elevatorCapacity = elevatorCapacity;
+            this.personsInElevator = personsInElevator; 
+        }
+
+        Entra(){
+            if(this.elevatorCapacity == this.personsInElevator ){
+                console.log("O Elevador esta cheio")
+            }else{
+                this.personsInElevator = this.personsInElevator + 1;
+            console.log('A olevador tem ' + this.personsInElevator +' pessoas.');
+            }
+        }
+        Sai(){
+            if(this.personsInElevator == 0 ){
+                console.log("O Elevador já esta vazio")
+            }else{
+                this.personsInElevator = this.personsInElevator - 1;
+            console.log('O elevador tem ' + this.personsInElevator +' pessoas.');
+            }
+        }
+        Sobe(){
+            if(this.currentFloor == this.howmanyfloors ){
+                console.log("O Elevador já esta no ultimo andar")
+            }else{
+                this.currentFloor = this.currentFloor + 1;
+            console.log('O elevador esta no ' + this.currentFloor +' andar.');
+            }
+        }
+        Desce(){
+            if(this.currentFloor == 0 ){
+                console.log("O Elevador já esta no andar mais baixo")
+            }else{
+                this.currentFloor = this.currentFloor - 1;
+            console.log('A olevador esta no ' + this.currentFloor +' andar.');
+            }
+        }
+    }
+
+        var teste = new Elevator ('0', '7', '6', '0')
+
+        teste.Desce()
+        teste.Sai()
+    </script>
+</body>
+</html>
